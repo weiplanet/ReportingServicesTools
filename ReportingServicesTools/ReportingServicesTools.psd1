@@ -7,7 +7,7 @@
     RootModule = 'ReportingServicesTools.psm1'
     
     # Version number of this module.
-    ModuleVersion = '0.0.4.7'
+    ModuleVersion = '0.0.5.6'
     
     # ID used to uniquely identify this module
     GUID = '9d139310-ce45-41ce-8e8b-d76335aa1789'
@@ -22,7 +22,7 @@
     Copyright = '2016 Microsoft Corporation'
     
     # Description of the functionality provided by this module
-    Description = 'Provides extra functionality for SSRS (SQL Server Reporting Services).'
+    Description = 'Provides extra functionality for SSRS (SQL Server Reporting Services) and Power BI Report Server.  Includes the ability to deploy SSRS Reports, Datasets, and DataSources; as well as Power BI Reports.  For more information about the capabilities of this module, please visit the Project Site: https://github.com/Microsoft/ReportingServicesTools/'
     
     # Minimum version of the Windows PowerShell engine required by this module
     PowerShellVersion = '3.0'
@@ -69,9 +69,11 @@
         'Get-RsCatalogItemRole',
         'Get-RsDataSource',
         'Get-RsFolderContent',
+        'Get-RsRestFolderContent',
         'Get-RsItemDataSource',
         'Get-RsItemReference',
         'Get-RsRestItemDataSource',
+        'Get-RsRestItem',
         'Get-RsSubscription',
         'Grant-RsCatalogItemRole',
         'Grant-RsSystemRole',
@@ -127,7 +129,9 @@
     # Aliases are stored in ReportingServicesTools.psm1
     AliasesToExport = @(
         'Get-RsCatalogItems',
+        'Get-RsCatalogItem',
         'Get-RsChildItem',
+        'Get-RsItem',
         'Get-RsItemReferences',
         'Grant-AccessOnCatalogItem',
         'Grant-AccessToRS',

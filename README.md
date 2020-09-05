@@ -1,12 +1,12 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/github/microsoft/reportingservicestools?branch=master&svg=true)](https://ci.appveyor.com/project/jtarquino/reportingservicestools)
+[![Build status](https://ci.appveyor.com/api/projects/status/github/microsoft/reportingservicestools?branch=master&svg=true)](https://ci.appveyor.com/project/jtarquino/reportingservicestools) [![ReportingServicesTools](https://img.shields.io/powershellgallery/v/ReportingServicesTools.svg?style=flat-square&label=ReportingServicesTools)](https://www.powershellgallery.com/packages/ReportingServicesTools/)
 # Reporting Services PowerShell
 SQL Server Reporting Services PowerShell utilities 
 
 ## Synopsis
 
-This project contains PowerShell scripts that allows you to perform various operations with SQL Server Reporting Services. In order to use the scripts included in this project successfully, please download/clone the entire project as there are dependencies between the scripts. 
+This project contains PowerShell scripts that allows you to perform various operations with SQL Server Reporting Services and Power BI Report Server. In order to use the scripts included in this project successfully, please download/clone the entire project as there are dependencies between the scripts. 
 
-All of our scripts were written with the assumption that you will be executing them against SQL Server 2016 Reporting Services default instance (i.e. mssqlserver). However, we understand this may not be the case for you. So for each script, you will see that we have provided a way for you to specify the name and/or version of your SQL Server Reporting Services instance name. Sometimes the version of your SQL Server instance is also required. If you do not provide one, we will assume that you want to execute this against the default instance.   
+All of our scripts were written with the assumption that you will be executing them against SQL Server 2016 Reporting Services default instance (i.e. mssqlserver). However, we understand this may not be the case for you. So for each script, you will see that we have provided a way for you to specify the name and/or version of your SQL Server Reporting Services or Power BI Report Server instance name. Sometimes the version of your SQL Server instance is also required. If you do not provide one, we will assume that you want to execute this against the default instance.   
 
 ## PowerShell Version
 Please ensure you're running PowerShell version 3.0+
@@ -59,7 +59,7 @@ The following is a list of commands which are available for you to use once you 
 |New-RsScheduleXml|This command creates an XML string definition of a subscription schedule. For use with the -Schedule parameter or New-RsSubscription.|
 |New-RsWebServiceProxy|This command creates a new Web Service Proxy which is used to interact with the SOAP Endpoint.|
 |Out-RsCatalogItem|This command downloads a catalog item.|
-|Out-RsFolderContent|This command all catalog items in folder.|
+|Out-RsFolderContent|This command downloads all catalog items in folder.|
 |Out-RsRestFolderContent|This command downloads all catalog items under a folder using the REST Endpoint.|
 |Out-RsRestCatalogItem|This command downloads a catalog item using the REST Endpoint.|
 |Register-PowerBI|This command registers Power BI information with SQL Server Reporting Services. Alias: Register-RSPowerBI|
@@ -97,6 +97,7 @@ Some of the commands listed above allow you to optionally specify the version of
 |SQL Server 2014|12|
 |SQL Server 2016|13|
 |SQL Server 2017|14|
+|SQL Server 2019|15|
 
 ## Motivation
 
@@ -141,7 +142,7 @@ If you have any scripts you would like to share, we request you to please format
 
 ## Contributions
 
-For contributions please provide the minimun possible increment per Pull Request so it can reviewed and merged quickly.
+For contributions please provide the minimum possible increment per Pull Request so it can reviewed and merged quickly.
 
 ## Code of Conduct
 
